@@ -1,12 +1,10 @@
 const mongoose = require('mongoose')
 
-const db_URL = 'mongodb://127.0.0.1:27017/vocabulary_test'
-
 exports.createMongooseConection = () => {
-  mongoose.connect(db_URL, { useMongoClient: true })
+  mongoose.connect(REMOTE_URI_DB, { useMongoClient: true })
 
   mongoose.connection.on('connected', () => {
-    console.log('Mongoose default connection open to ' + db_URL)
+    console.log('Mongoose default connection open to ' + REMOTE_URI_DB)
   })
 
   mongoose.connection.on('error', err => {
