@@ -12,5 +12,8 @@
     "express": "^4.16.2",
     "mongodb": "^3.0.1",
     "mongoose": "^4.13.9"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
   }
 }
