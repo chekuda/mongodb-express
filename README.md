@@ -10,9 +10,7 @@ First please install mongodb in your computer:
   - Make sure you change the rights to write the db
 
 Second run mongodb to make the connection succesful:
-  - Open two terminals
-  - In one terminal run `mongod --bind_ip 127.0.0.1`
-  - In the other terminal run `mongo`
+  - Run mongo in terminal `mongod --bind_ip 127.0.0.1`
 
 ## Remote database conection
 
