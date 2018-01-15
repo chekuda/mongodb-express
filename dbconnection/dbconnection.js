@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 
 exports.createMongooseConection = () => {
-  mongoose.connect(REMOTE_URI_DB, { useMongoClient: true })
+  mongoose.connect(process.env.REMOTE_URI_DB, { useMongoClient: true })
 
   mongoose.connection.on('connected', () => {
-    console.log('Mongoose default connection open to ' + REMOTE_URI_DB)
+    console.log('Mongoose default connection open to ' + process.env.REMOTE_URI_DB)
   })
 
   mongoose.connection.on('error', err => {
